@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
+  get 'current_temperature' => 'welcome#current_temperature'
+
+  get 'customer_phonebook' => 'welcome#customer_phonebook'
   post 'logger/log' => 'logger#log'
 
   # Example of regular route:
